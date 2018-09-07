@@ -10,5 +10,8 @@
     },
     "scripts": {
         "start": "node index.js"
+    },
+    "dependencies": {
+        "googleapis": "^33.0.0"
     }
 }
