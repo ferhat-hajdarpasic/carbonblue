@@ -12,6 +12,8 @@
         "start": "node index.js"
     },
     "dependencies": {
-        "googleapis": "^33.0.0"
+        "basic-ftp": "^2.13.2",
+        "googleapis": "^33.0.0",
+        "stream-buffers": "^3.0.2"
     }
 }
