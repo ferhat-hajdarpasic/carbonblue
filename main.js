@@ -26,7 +26,11 @@ async function main() {
         for(i = 0; i < files.length; i++ ) {
             let filename = files[i].name;
             if(filename.endsWith('.csv')) {
+                try {
                 await processCsvFile(filename);
+                } catch(error) {
+                    console.log(`Error: ${error}`);
+                }
                 console.log(`Processing successful, removing ${filename}`);
                 await ftp.remove(filename);
                 console.log(`Removing ${filename} successful`);
